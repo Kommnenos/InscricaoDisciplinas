@@ -37,3 +37,20 @@ class AlunoFactory(UsuarioFactory):
 class AdmDepartamentoFactory(UsuarioFactory):
     def criar_usuario(self, nome: str, cpf: str, email: str, senha: str) -> Usuario:
         return AdmDepartamento(nome, cpf, email, senha, None, None)
+
+
+class InteraceValidaLogin(ABC):
+    @abstractmethod
+    def verifica_email(self, email: str, token) -> Usuario:
+        pass
+
+    def verifica_senha(self, senha: str, token) -> bool:
+        pass
+
+
+class ValidaDadosUsuarioIMP(InteraceValidaLogin):
+    def verifica_email(self, email: str, token) -> Usuario:
+        pass
+
+    def verifica_senha(self, senha: str, token) -> bool:
+        pass

@@ -1,11 +1,12 @@
 from abc import ABC, abstractmethod
-import disciplina
-import Usuario
+from disciplinaPkg.Disciplina import Disciplina
+from UsuarioPkg.Aluno import Aluno
 import EstadoInscricao
+
 
 class InterfaceInscricao(ABC):
     _currentState : EstadoInscricao 
     
     @abstractmethod
-    def inscreve_aluno(self, aluno: Usuario.Aluno, disciplina: disciplina.Disciplina) -> bool:
+    def inscreve_aluno(self, aluno: Aluno, disciplina: Disciplina) -> bool:
         pass

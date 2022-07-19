@@ -1,5 +1,5 @@
-from abc import ABC, abstractmethod
-import matriculaPkg
+from abc import ABC
+
 
 class Usuario(ABC):
     def __init__(self, nome: str, cpf: str, email: str, senha: str):
@@ -7,5 +7,3 @@ class Usuario(ABC):
         self._cpf = cpf
         self._email = email
         self._senha = senha
-
-

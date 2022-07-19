@@ -1,6 +1,7 @@
-import Aluno
-import Disciplina
+from UsuarioPkg.Aluno import Aluno
+from disciplinaPkg.Disciplina import Disciplina
+
 
 class InscricaoController:
-    def inscrever_aluno_disciplina(aluno: Aluno.Aluno, disciplina: Disciplina.Disciplina) -> bool:
+    def inscrever_aluno_disciplina(self, aluno: Aluno, disciplina: Disciplina) -> bool:
         pass

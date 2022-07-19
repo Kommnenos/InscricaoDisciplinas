@@ -1,8 +1,8 @@
-import curso
+from cursoPkg.Curso import Curso
 
 
 class Disciplina:
-    def __init__(self, nome: str, codigo: int, numero_vagas: int, deferidos, curso: curso.Curso, perfil: int):
+    def __init__(self, nome: str, codigo: int, numero_vagas: int, deferidos, curso: Curso, perfil: int):
         self._nome = nome
         self._codigo = codigo
         self._numero_vagas = numero_vagas

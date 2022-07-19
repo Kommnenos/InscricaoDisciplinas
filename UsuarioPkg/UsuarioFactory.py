@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-import Usuario
+from Usuario import Usuario
+
 
 class UsuarioFactory(ABC):
     @abstractmethod

@@ -1,11 +1,12 @@
-import Usuario
+from UsuarioPkg.Usuario import Usuario
+
 
 class UsuarioController:
-    def logar(email: str, senha: str) -> Usuario :
+    def logar(self, email: str, senha: str) -> Usuario:
         pass
 
-    def deslogar():
+    def deslogar(self):
         pass
 
-    def cadastrar_usuario(email: str, senha:str, cpf: str, nome: str) -> bool:
+    def cadastrar_usuario(self, email: str, senha: str, cpf: str, nome: str) -> bool:
         pass

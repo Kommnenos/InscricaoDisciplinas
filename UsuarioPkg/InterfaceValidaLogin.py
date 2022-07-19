@@ -1,5 +1,6 @@
-import Usuario
+from Usuario import Usuario
 from abc import ABC, abstractmethod
+
 
 class InterfaceValidaLogin(ABC):
     @abstractmethod

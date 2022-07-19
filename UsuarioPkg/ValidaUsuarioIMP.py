@@ -1,5 +1,6 @@
-import Usuario
-import InterfaceValidaLogin
+from Usuario import Usuario
+from InterfaceValidaLogin import InterfaceValidaLogin
+
 
 class ValidaDadosUsuarioIMP(InterfaceValidaLogin):
     def verifica_email(self, email: str, token) -> Usuario:
